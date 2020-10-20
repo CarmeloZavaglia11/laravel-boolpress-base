@@ -6,7 +6,7 @@
 @endif
 
     @foreach ($posts as $post)
-        <h2>{{$post->id}}</h2>
+        <h2>{{$post->id}} Autore:{{$post->user->name}}</h2>
         <h3>{{$post->title}}</h3>
         <p>{{$post->body}}</p>
     @endforeach
